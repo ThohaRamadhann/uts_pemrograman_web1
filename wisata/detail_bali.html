@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail tentang Bali</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative;
+            background: url('../images/img1.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 1;
+        }
+        header div {
+            z-index: 2; 
+        }
+
+        .footer {
+            background-color: #565454;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .attraction-card {
+            transition: transform 0.2s;
+        }
+        .attraction-card:hover {
+            transform: scale(1.05);
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h4 style="color: #f8f9fa;">Explore Nusantara</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color: #f8f9fa;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#destinations" style="color: #f8f9fa;">Destinations</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <header>
+        <div>
+            <h1>Bali, Pulau Dewata</h1>
+            <p class="lead">Surga tropis dengan budaya, alam, dan petualangan</p>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Tentang Bali</h2>
+                <p align="justify">Bali, sering disebut sebagai "The Island of Gods" atau Pulau Dewata, adalah salah satu destinasi wisata paling terkenal di dunia. Terletak di Indonesia, tepatnya di sebelah timur Pulau Jawa, Bali dikenal dengan keindahan alamnya yang mempesona, budaya yang kaya, serta keramahan penduduknya. Pulau ini menawarkan beragam pengalaman yang dapat memuaskan setiap jenis wisatawan, baik yang mencari ketenangan, petualangan, maupun kekayaan budaya.</p>
+                <p align="justify">Bali memiliki pemandangan alam yang luar biasa, mulai dari pantai berpasir putih yang menakjubkan hingga pegunungan yang hijau. Salah satu daya tarik utamanya adalah pantai-pantai yang indah, seperti Pantai Kuta, Sanur, dan Nusa Dua, yang terkenal dengan ombak yang cocok untuk berselancar, berjemur, atau sekadar menikmati matahari terbenam.
+                Di sisi lain, Bali juga dikenal dengan sawah-sawah teraseringnya yang memesona. Salah satu lokasi terbaik untuk menikmati pemandangan ini adalah di Tegallalang, Ubud. Di sini, wisatawan bisa menikmati keindahan alam yang hijau dan sejuk sambil belajar tentang teknik pertanian tradisional yang sudah diwariskan secara turun temurun oleh masyarakat Bali.</p>
+                <p align="justify">Bali juga dikenal sebagai tempat untuk relaksasi dan spiritualitas. Banyak pusat-pusat yoga dan meditasi yang menawarkan retret spiritual bagi mereka yang ingin mencari kedamaian batin. Ubud adalah pusat dari kegiatan spiritual di Bali, dengan banyaknya tempat yang menawarkan pelatihan yoga, meditasi, dan terapi tubuh.
+                Selain itu, Bali juga memiliki banyak spa dan pusat perawatan tubuh yang menawarkan pijat tradisional Bali, yang sangat terkenal untuk merilekskan tubuh setelah hari yang melelahkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Tradisi di Bali</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card attraction-card">
+                        <img src="../images/img5.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Upacara Saraswati</h5>
+                            <p class="card-text">Upacara Saraswati yang diperingati setiap 6 bulan sekali penting dilakukan khususnya untuk para siswa sekolah dan penggelut dunia pendidikan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card attraction-card">
+                        <img src="https://ik.imagekit.io/tvlk/blog/2020/05/Upacara-Melasti-Website-Resmi-Pemerintah-Kabupaten-Buleleng.jpg?tr=dpr-2,w-675" alt="Sacred Monkey Forest" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Melasti</h5>
+                            <p class="card-text">Melasti merupakan ritual ibadah untuk menyambut hari raya Nyepi. Sebelum merayakan hari raya Nyepi, para umat Hindu melaksanakan upacara Melasti yang merupakan ritual penyucian diri.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card attraction-card">
+                        <img src="../images/img4.jpg" alt="Tegallalang Rice Terrace" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Gebung Ende Seraya</h5>
+                            <p class="card-text">Di Desa Seraya, Kabupaten Karangasem, Bali, ada sebuah tradisi unik bernama Gebug Ende Seraya. Tradisi ini merupakan perang rotan yang sudah dilakukan turun-temurun dan masih dilestarikan hingga saat ini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>copyright by: 22552011175_Thoha Ramadhan Nugroho_TIF CID 22</p>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

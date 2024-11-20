@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Indonesia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ededed;
+        }
+        .hero {
+            position: relative;
+            background-image: url('https://cdn.pixabay.com/photo/2017/11/24/21/49/bali-2975787_960_720.jpg');
+            background-size: cover;
+            height: 700px; /* Ubah tinggi sesuai keinginan */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(73, 73, 73, 0.1); 
+            z-index: -1; 
+        }
+        
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: cover;
+            filter: blur(10px); 
+            transform: scale(1.05); 
+            z-index: -2;
+        }
+        
+        
+        .btn-custom {
+            background-color: #528ef5;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #218c1d; /* Dark green color */
+        }
+        .info-section {
+            padding: 60px 0;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .info-card {
+            flex: 1 1 calc(33.33% - 20px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-transition {
+            transition: background-color 0.3s ease;
+        }
+        .bg-transition:hover {
+            background-color: #528ef5;
+        }
+        
+        .footer {
+            background-color: #565454;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .info-card {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .info-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Nusantara Explore</h1>
+            <p>Eksplorasi tempat-tempat menakjubkan di Indonesia dengan pengalaman tak terlupakan!</p>
+            <a href="#destinations" class="btn btn-custom btn-lg">Jelajahi Sekarang</a>
+            <a href="login.html" class="btn btn-outline-light btn-lg ms-3">Login</a>
+        </div>
+    </div>
+
+    <!-- Main Information Section -->
+    <div class="container info-section" id="destinations">
+        <div class="text-center mb-5">
+            <h2 style="font-size: 1.5rem;">Destinasi Wisata Terbaik di Indonesia</h2>
+            <p class="lead" style="font-size: 1.2rem;">Dari pantai yang menakjubkan hingga gunung yang megah, Indonesia memiliki segalanya.</p>
+        </div>
+    </div>
+    
+    <div class="card-container">
+        <!-- Card 1 - Bali -->
+        <a href="wisata/detail_bali.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="images/img1.jpg" class="card-img-top" alt="Bali">
+            <div class="card-body">
+                <h5 class="card-title">Bali</h5>
+                <p class="card-text">Nikmati pesona Bali dengan pantai berpasir putih, budaya yang kaya, serta kehidupan malam yang hidup. Jangan lewatkan juga pura-pura indah yang menjadi warisan budaya dunia.</p>
+            </div>
+        </a>
+
+        <!-- Card 2 - Raja Ampat -->
+        <a href="wisata/detail_raja_ampat.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="images/img2.jpg" class="card-img-top" alt="Raja Ampat">
+            <div class="card-body">
+                <h5 class="card-title">Raja Ampat</h5>
+                <p class="card-text">Jelajahi keindahan alam bawah laut Raja Ampat yang memukau dengan terumbu karang yang masih alami dan fauna laut yang menakjubkan, menjadikannya surga bagi para penyelam.</p>
+            </div>
+        </a>
+
+        <!-- Card 3 - Yogyakarta -->
+        <a href="wisata/detail_yogyakarta.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="images/img3.jpg" class="card-img-top" alt="Yogyakarta">
+            <div class="card-body">
+                <h5 class="card-title">Yogyakarta</h5>
+                <p class="card-text">Yogyakarta menawarkan pengalaman budaya yang kaya, dengan candi-candi megah seperti Borobudur dan Prambanan, serta suasana kota yang penuh seni dan tradisi.</p>
+            </div>
+        </a>
+
+        <!-- Card 4 - Mount Rinjani -->
+        <a href="wisata/detail_gunung_rinjani.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://cdn.pixabay.com/photo/2016/07/05/18/23/mountain-1499158_1280.jpg" class="card-img-top" alt="Mount Rinjani">
+            <div class="card-body">
+                <h5 class="card-title">Gunung Rinjani</h5>
+                <p class="card-text">Gunung Rinjani di Lombok merupakan destinasi pendakian favorit dengan pemandangan kawah yang luar biasa dan trek menantang yang memuaskan para petualang sejati.</p>
+            </div>
+        </a>
+
+        <!-- Card 5 - Komodo Island -->
+        <a href="wisata/detail_pulau_komodo.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://cdn.pixabay.com/photo/2017/06/11/11/36/komodo-dragons-2392146_1280.jpg" class="card-img-top" alt="Komodo Island">
+            <div class="card-body">
+                <h5 class="card-title">Pulau Komodo</h5>
+                <p class="card-text">Temui komodo, reptil purba yang hanya ada di Pulau Komodo, dan nikmati keindahan pantai-pantai eksotis serta kehidupan laut yang menakjubkan.</p>
+            </div>
+        </a>
+
+        <!-- Card 6 - Gili Islands -->
+        <a href="wisata/detail_gili_island.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_640.jpg" class="card-img-top" alt="Gili Islands">
+            <div class="card-body">
+                <h5 class="card-title">Gili Islands</h5>
+                <p class="card-text">Gili Islands menawarkan keindahan pantai yang tenang dan air jernih ideal untuk snorkeling, diving, dan bersantai di pulau-pulau kecil yang menawan ini.</p>
+            </div>
+        </a>
+
+        <!-- Card 7 - Bromo -->
+        <a href="wisata/detail_gunung_bromo.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://cdn.pixabay.com/photo/2017/08/27/23/28/indonesia-2687971_960_720.jpg" class="card-img-top" alt="Mount Bromo">
+            <div class="card-body">
+                <h5 class="card-title">Gunung Bromo</h5>
+                <p class="card-text">Saksikan matahari terbit yang memukau di Gunung Bromo, salah satu gunung berapi paling terkenal di Indonesia, yang menawarkan pemandangan luar biasa dan pengalaman petualangan yang tak terlupakan.</p>
+            </div>
+        </a>
+
+        <!-- Card 8 - Labuan Bajo -->
+        <a href="wisata/detail_labuan_bajo.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://mawatu.co.id/wp-content/uploads/2024/03/pulau-padar-labuan-bajo-1-1024x683.webp" class="card-img-top" alt="Labuan Bajo">
+            <div class="card-body">
+                <h5 class="card-title">Labuan Bajo</h5>
+                <p class="card-text">Labuan Bajo adalah gerbang menuju Taman Nasional Komodo, dengan pemandangan alam yang luar biasa serta tempat sempurna untuk menyelam dan menjelajah pulau-pulau indah.</p>
+            </div>
+        </a>
+
+        <!-- Card 9 - Kawah Putih -->
+        <a href="wisata/detail_pulau_mentawai.html" class="card info-card p-3 text-decoration-none text-dark">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnXZVE4GyEyxD7sDMZZavQ9VJvb8SkGgnRQ&s" class="card-img-top" alt="Kepulauan Mentawai">
+            <div class="card-body">
+                <h5 class="card-title">Kepulauan Mentawai</h5>
+                <p class="card-text">
+                    Kepulauan Mentawai, yang terletak di lepas pantai barat Sumatera, Indonesia, dikenal dengan keindahan alamnya yang luar biasa, terutama pantai-pantai yang masih alami dan ombak yang sempurna untuk selancar.</p>
+            </div>
+        </a>
+    </div>
+    
+    <div class="footer">
+        <p>copyright by: 22552011175_Thoha Ramadhan Nugroho_TIF CID 22</p>
+    </div>
+    
+    <script>
+        document.querySelector('.btn-outline-light').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.body.classList.add('ease-in');
+            setTimeout(function() {
+                window.location.href = 'login.html';
+            }, 500);
+        });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

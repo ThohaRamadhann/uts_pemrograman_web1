@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Yogyakarta</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            position: relative;
+            background: url("https://cdn.pixabay.com/photo/2017/06/11/11/36/komodo-dragons-2392146_1280.jpg") no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            /* Black with transparency */
+            z-index: 1;
+        }
+
+        header div {
+            z-index: 2;
+            /* Content will be above the overlay */
+        }
+
+        .footer {
+            background-color: #565454;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .attraction-card {
+            transition: transform 0.2s;
+        }
+
+        .attraction-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h4 style="color: #f8f9fa">Explore Nusantara</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color: #f8f9fa">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#destinations" style="color: #f8f9fa">Destinations</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <header>
+        <div>
+            <h1>Pulau Komodo</h1>
+            <p class="lead">Surga tropis dengan budaya, alam, dan petualangan</p>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Tentang Pulau Komodo</h2>
+                <p align="justify">
+                    Pulau Komodo adalah sebuah pulau yang terletak di Provinsi Nusa Tenggara Timur (NTT), Indonesia, dan
+                    terkenal sebagai rumah bagi komodo—reptil terbesar di dunia. Pulau ini merupakan bagian dari Taman
+                    Nasional Komodo yang diakui sebagai Situs Warisan Dunia UNESCO sejak tahun 1991. Lokasi dan Geografi
+                    Letak: Pulau Komodo terletak di antara Pulau Sumbawa dan Pulau Flores di Indonesia, dan termasuk
+                    dalam Kepulauan Sunda Kecil (Nusa Tenggara).
+                    Luas: Pulau Komodo memiliki luas sekitar 390 km² dan termasuk dalam kawasan Taman Nasional Komodo,
+                    yang mencakup beberapa pulau lainnya, seperti Pulau Rinca dan Pulau Padar.
+                    Topografi: Pulau Komodo memiliki lanskap yang beragam, termasuk perbukitan yang curam, lembah,
+                    pantai berpasir, serta hutan tropis dan savana yang luas.
+                </p>
+                <p align="justify">
+                    Taman Nasional Komodo
+                    Status Perlindungan: Taman Nasional Komodo dibentuk untuk melindungi spesies komodo, yang menjadi
+                    ikon utama kawasan ini. Taman ini juga melindungi berbagai flora dan fauna endemik serta ekosistem
+                    laut yang kaya, termasuk terumbu karang yang indah.
+                    Ekosistem Laut: Di sekitar Pulau Komodo terdapat terumbu karang yang sangat indah, menjadikannya
+                    tujuan populer untuk aktivitas menyelam dan snorkeling. Laut di sekitar Taman Nasional Komodo juga
+                    merupakan rumah bagi banyak spesies ikan, penyu, serta mamalia laut seperti lumba-lumba dan paus.
+                    Daya Tarik Lain: Selain komodo, Pulau Komodo juga terkenal dengan pemandangannya yang spektakuler,
+                    pantai-pantai berpasir putih, serta kesempatan untuk melakukan trekking dan petualangan alam.
+                </p>
+                <p align="justify">
+                    Spesies Endemik: Komodo adalah spesies varanus atau biawak yang hanya ditemukan di beberapa pulau di
+                    Indonesia, terutama Pulau Komodo, Pulau Rinca, dan beberapa pulau kecil lainnya di sekitar Nusa
+                    Tenggara Timur.
+                    Ciri-ciri: Komodo adalah reptil besar yang dapat tumbuh hingga 3 meter panjangnya dan berat mencapai
+                    70 kg atau lebih. Mereka memiliki tubuh kekar, cakaran yang tajam, serta lidah bercabang yang
+                    digunakan untuk mendeteksi bau.
+                    Perilaku dan Habitat: Komodo adalah predator yang sangat kuat dan dapat memangsa hewan-hewan besar,
+                    seperti rusa, babi hutan, dan kerbau. Mereka juga terkenal dengan gigitan yang memiliki racun, yang
+                    dapat menyebabkan mangsanya mati akibat infeksi. Komodo lebih aktif pada pagi hari dan sering
+                    terlihat berjemur di bawah sinar matahari.
+                    Status Konservasi: Komodo termasuk dalam spesies yang terancam punah. Populasi komodo diperkirakan
+                    sekitar 2.500 individu di alam liar, dan Taman Nasional Komodo berperan penting dalam upaya
+                    konservasi mereka.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Wisata populer lainnya</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="../wisata/detail_gunung_rinjani.html" class= "card-link">
+                        <div class="card attraction-card">
+                            <img src="https://cdn.pixabay.com/photo/2016/07/05/18/23/mountain-1499158_1280.jpg" />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <h5>Gunung Rinjani</h5>
+                                    <p class="card-text" style="color: black;">
+                                        Gunung Rinjani di Lombok merupakan destinasi pendakian favorit dengan
+                                        pemandangan
+                                        kawah yang luar biasa dan trek menantang yang memuaskan para petualang sejati.
+                                    </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../wisata/detail_gunung_bromo.html" class="card-link">
+                        <div class="card attraction-card">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/27/23/28/indonesia-2687971_960_720.jpg"
+                                alt="Gunung Rinjani" class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Gunung Bromo</h5>
+                                <p class="card-text" style="color: black;">
+                                    Saksikan matahari terbit yang memukau di Gunung Bromo, salah satu gunung berapi
+                                    paling
+                                    terkenal di Indonesia, yang menawarkan pemandangan luar biasa dan pengalaman
+                                    petualangan
+                                    yang tak terlupakan.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../wisata/detail_pulau_mentawai.html" class="card-link">
+                        <div class="card attraction-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlnXZVE4GyEyxD7sDMZZavQ9VJvb8SkGgnRQ&s"
+                                class="card-img-top" alt="Kepulauan Mentawai" class="card-img-top" alt="Labuan Bajo"
+                                class="card-img-top" />
+                            <div class="card-body">
+                                <h5 class="card-title">Pulau Mentawai</h5>
+                                <p class="card-text" style="color: black;">
+                                    Kepulauan Mentawai, yang terletak di lepas pantai barat Sumatera, Indonesia, dikenal
+                                    dengan keindahan alamnya yang luar biasa, terutama pantai-pantai yang masih alami
+                                    dan
+                                    ombak yang sempurna untuk selancar.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>copyright by: 22552011175_Thoha Ramadhan Nugroho_TIF CID 22</p>
+    </div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

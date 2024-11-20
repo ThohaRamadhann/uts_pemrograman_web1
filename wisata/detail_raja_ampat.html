@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail tentang Raja Ampat</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header {
+            position: relative;
+            background: url('../images/img2.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Black with transparency */
+            z-index: 1;
+        }
+        header div {
+            z-index: 2; 
+        }
+
+        .footer {
+            background-color: #565454;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .attraction-card {
+            transition: transform 0.2s;
+        }
+        .attraction-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h4 style="color: #f8f9fa;">Explore Nusantara</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" style="color: #f8f9fa;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#destinations" style="color: #f8f9fa;">Destinations</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Image -->
+    <header>
+        <div>
+            <h1>Raja Ampat, Papua Barat</h1>
+            <p class="lead">Surga tropis dengan budaya, alam, dan petualangan</p>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Tentang Raja Ampat</h2>
+                <p align="justify">Raja Ampat adalah salah satu destinasi wisata alam terindah yang terletak di Papua Barat, Indonesia. Raja Ampat terletak di bagian barat laut Papua, Indonesia, tepatnya di Kepulauan Raja Ampat. Nama "Raja Ampat" sendiri berasal dari bahasa lokal yang berarti "Empat Raja," mengacu pada empat pulau utama di kawasan ini, yaitu Waigeo, Misool, Salawati, dan Batanta.
+                Akses menuju Raja Ampat dapat ditempuh melalui penerbangan ke Sorong, Papua Barat, kemudian melanjutkan perjalanan menggunakan kapal menuju berbagai pulau di Raja Ampat.</p>
+                <p align="justify">Pantai dan Pulau: Raja Ampat memiliki pulau-pulau kecil yang indah, pasir putih, dan air laut yang jernih. Pulau-pulau seperti Misool dan Wayag terkenal dengan pemandangan alam yang menakjubkan, tebing-tebing karst yang menjulang tinggi, serta pantai-pantai yang masih alami dan terpencil.
+                Bawah Laut: Raja Ampat terkenal sebagai salah satu tempat penyelaman terbaik di dunia, dengan lebih dari 1.500 spesies ikan dan sekitar 600 spesies terumbu karang. Lokasi penyelaman yang populer di antaranya adalah Blue Magic, Manta Sandy, dan Cape Kri.
+                Hutan dan Alam Terpencil: Selain keindahan lautnya, Raja Ampat juga menawarkan kekayaan flora dan fauna daratan yang menakjubkan. Hutan hujan tropisnya yang lebat penuh dengan satwa langka, seperti burung Cenderawasih dan kasuari.</p>
+                <p align="justify">Raja Ampat menjadi contoh penting dari wisata berkelanjutan, dengan banyak organisasi yang berfokus pada pelestarian alam dan kehidupan laut di kawasan ini. Pengelolaan konservasi dilakukan untuk menjaga agar pariwisata tidak merusak ekosistem yang sangat rentan di Raja Ampat. Banyak resort yang bekerja sama dengan lembaga konservasi untuk mendukung kegiatan pelestarian dan penelitian terkait biota laut dan habitat mereka.Raja Ampat menawarkan keunikan tersendiri yang sulit ditemukan di tempat lain, mulai dari keindahan alam bawah laut yang luar biasa hingga kehidupan masyarakat adat yang masih kuat mempertahankan tradisi mereka. Keindahan alam yang masih alami dan tidak tersentuh, menjadikan Raja Ampat sebagai tempat yang sangat bernilai untuk wisatawan yang mencari pengalaman yang autentik dan damai.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Wisata populer lainnya</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="../wisata/detail_yogyakarta.html" class="card-link">
+                    <div class="card attraction-card">
+                        <img src="../images/img3.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Yogyakarta</h5>
+                            <p class="card-text" style="color: black;">Yogyakarta menawarkan pengalaman budaya yang kaya, dengan candi-candi megah seperti Borobudur dan Prambanan, serta suasana kota yang penuh seni dan tradisi.</p>
+                        </div>
+                    </div> 
+                </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../wisata/detail_gunung_rinjani.html" class="card-link">
+                    <div class="card attraction-card">
+                        <img src="https://cdn.pixabay.com/photo/2016/07/05/18/23/mountain-1499158_1280.jpg" alt="Gunung Rinjani" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Gunung Rinjani</h5>
+                            <p class="card-text"  style="color: black;">Gunung Rinjani di Lombok merupakan destinasi pendakian favorit dengan pemandangan kawah yang luar biasa dan trek menantang yang memuaskan para petualang sejati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="../wisata/detail_pulau_komodo.html" class="card-link">
+                    <div class="card attraction-card">
+                        <img src="https://cdn.pixabay.com/photo/2017/06/11/11/36/komodo-dragons-2392146_1280.jpg" class="card-img-top" alt="Komodo Island" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Komodo Island</h5>
+                            <p class="card-text" style="color: black;">Temui komodo, reptil purba yang hanya ada di Pulau Komodo, dan nikmati keindahan pantai-pantai eksotis serta kehidupan laut yang menakjubkan.</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="footer">
+        <p>copyright by: 22552011175_Thoha Ramadhan Nugroho_TIF CID 22</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
